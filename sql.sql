@@ -54,7 +54,7 @@ CREATE TABLE vol(
         PRIMARY KEY (idvol),
         FOREIGN KEY (idaeroport) REFERENCES aeroport(idaeroport),
         FOREIGN KEY (idavion) REFERENCES avion(idavion),
-        FOREIGN KEY (idaeroport_arriver) REFERENCES aeroport(idaeroport)
+        FOREIGN KEY (idaeroport_arriver) REFERENCES aeroport(idaeroport_arriver)
 );
 
 
@@ -131,3 +131,5 @@ CREATE TABLE promotion(
 );
 
 INSERT INTO client VALUES(NULL,"Tang","Vaesna", "21 rue Gabriel","vaesna@gmail.com","celibataire","12345678","0780905636","vaesna");
+INSERT INTO client VALUES(NULL,"Marday","Sendinee", "43 rue du Docteur Variot", "sendinee@gmail.com","celibataire","987654321","0782036248","zoé");
+INSERT INTO client VALUES(NULL,"Rakotomalala", "Jenn", "8 avenue du clocher", "jenn@gmail.com", "celibataire", "147258369", "0753584177", "jenn");
